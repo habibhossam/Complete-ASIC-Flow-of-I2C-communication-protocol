@@ -1,0 +1,26 @@
+-------------------------------------------------------
+
+PrimeTime save_session README file
+
+-------------------------------------------------------
+
+PrimeTime Version: 
+	V-2023.12 for linux64 -- Nov 21, 2023
+Save Session Date:
+	Thu May 16 05:39:56 2024
+ 
+-------------------------------------------------------
+
+Command log of this session is saved in "cmd_log".
+If the saved session is moved to a different location, 
+    please update the paths in the cmd_log file accordingly, 
+    in order to use the Constraints in-design flow.
+-------------------------------------------------------
+
+Current Design: i2c_master_top
+
+Technology librares referenced by this session:
+/eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db     saed90nm_max_lth.db
+-------------------------------------------------------
+At least 3 MB of free disk space in pt_tmp_dir will be required to restore this session.
+-------------------------------------------------------

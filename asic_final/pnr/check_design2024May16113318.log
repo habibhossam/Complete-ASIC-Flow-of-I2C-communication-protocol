@@ -1,0 +1,372 @@
+****************************************
+ Report : check_design
+ Options: { pre_route_stage }
+ Design : i2c_master_top
+ Version: V-2023.12
+ Date   : Thu May 16 11:33:21 2024
+****************************************
+
+****************************************
+Report : Data Mismatches
+Version: V-2023.12
+Date   : Thu May 16 11:33:21 2024
+****************************************
+No mismatches exist on the design.
+1
+1
+1
+
+=========================================================
+==     Check for PG Net Open  ==
+=========================================================
+
+Warning: PG net GVSS has opens. (ZRT-764)
+Warning: PG net GVDD has opens. (ZRT-764)
+
+>>>>>> Found 2 PG net open
+
+=========================================================
+==     Check for global route app-option  ==
+=========================================================
+
+>>> The option values are suggested.
+
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Warning: Ignore contact DIFFCON. (ZRT-015)
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Found antenna rule mode 4, diode mode 2:
+	layer M1:  max ratio 1000, diode ratio {0.06 0 456 43000} 
+	layer M2:  max ratio 1000, diode ratio {0.06 0 456 43000} 
+	layer M3:  max ratio 1000, diode ratio {0.06 0 456 43000} 
+	layer M4:  max ratio 1000, diode ratio {0.06 0 456 43000} 
+	layer M5:  max ratio 1000, diode ratio {0.06 0 456 43000} 
+	layer M6:  max ratio 1000, diode ratio {0.06 0 456 43000} 
+	layer M7:  max ratio 1000, diode ratio {0.06 0 456 43000} 
+	layer M8:  max ratio 1000, diode ratio {0.06 0 456 43000} 
+	layer M9:  max ratio 1000, diode ratio {0.06 0 8000 50000} 
+	layer CO: , diode ratio {0 0 1 0 0} 
+	layer VIA1:  max ratio 20, diode ratio {0.06 0 210 900} 
+	layer VIA2:  max ratio 20, diode ratio {0.06 0 210 900} 
+	layer VIA3:  max ratio 20, diode ratio {0.06 0 210 900} 
+	layer VIA4:  max ratio 20, diode ratio {0.06 0 210 900} 
+	layer VIA5:  max ratio 20, diode ratio {0.06 0 210 900} 
+	layer VIA6:  max ratio 20, diode ratio {0.06 0 210 900} 
+	layer VIA7:  max ratio 20, diode ratio {0.06 0 210 900} 
+	layer VIA8:  max ratio 20, diode ratio {0.06 0 210 900} 
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Port GVDD of cell routing
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Port GVSS of cell routing
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Warning: Port  Z at {{127.515,57.930} {142.195,59.640}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VDD at {{123.665,59.125} {142.865,60.265}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VSS at {{123.665,57.225} {142.865,58.225}} is out of boundary. Cannot be routed. (ZRT-720)
+Skipping 3 ectangle_only route guides because they don't cover the design boundary in the layer's  preferred direction.
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 default pitch 0.320 may be too small to handle up/down via. Note, that minimum requirements are "wire/via-down 0.315" & "wire/via-up 0.330". (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 default pitch 0.320 may be too small to handle up/down via. Note, that minimum requirements are "wire/via-down 0.360" & "wire/via-up 0.320". (ZRT-026)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 7.50 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 7.50 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Warning: Cell byte_controller/bit_controller/cnt_reg_4_ is placed overlapping with other cells at {{18.960 64.720} {30.800 67.600}}. (ZRT-763)
+Warning: Cell byte_controller/bit_controller/cnt_reg_9_ is placed overlapping with other cells at {{42.640 79.120} {53.840 82.000}}. (ZRT-763)
+Warning: High fanout net GVDD can affect runtime for antenna fixing. (ZRT-626)
+Warning: High fanout net GVSS can affect runtime for antenna fixing. (ZRT-626)
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+============================================
+==  Check for design                      ==
+============================================
+
+>>> No net contains a large number of ports 
+
+>>> No port contains a large number of pins 
+
+Warning: Port GVDD of cell routing
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Port GVSS of cell routing
+        is unplaced.  This may impact routing result. (ZRT-740)
+
+>>>>>> Found 2 unplaced ports
+
+================================
+==  Check for PG DPT on Track ==
+================================
+>>>>>> Number of PG rails cross even number of track: 0
+
+============================================
+==  Check for PG PreRoute setting         ==
+============================================
+ No number_of_secondary_pg_pin_connections setting and skip checking 
+ 
+============================================
+==        Check for pins         ==
+============================================
+
+>>>>>> found 4293 nonzero-spacing blockages overlap pins
+
+>>>>>> found 12528 pins overlap pins
+
+====================================================
+== Check for the Cut Metal not on Preferred Grid ==
+====================================================
+
+============================================
+==  Check for overlap of standard cells   ==
+============================================
+
+>>>>>> Detect 55 overlaps of standard cells
+Error: The design is not legalized. Skip blocked port checkings. (ZRT-588)
+
+============================================
+==     Check for min-grid violations      ==
+============================================
+
+  >>>> No Library min-grid violations found
+
+  ======= Design min-grid violations =======
+
+
+  >>>> Found 52 Design min-grid violations
+
+>>>>>> Total of 52 min-grid violations
+
+
+============================================
+==    Check for out-of-boundary ports     ==
+============================================
+
+>>>>>> Found 3 out-of-boundary ports
+
+============================================
+==     Check for shielding violations     ==
+============================================
+
+>>>>>> The following Non-PG net has a shape with shape_use shield_route
+
+>>> No non-PG net has a shape with shape_use shield_route.
+
+>>>>>> The following PG net has shape with shape_use detail_route and shape length is too long.
+
+>>> No PG net has shape with shape_use detail_route and shape length is too long.
+
+>>>>>> The following nets with shield non-default rule has no internal data representation in Zroute.
+
+>>> No nets with shield non-default rule has no internal data representation in Zroute.
+
+
+>>> No valid P/G net specified in route.common.shielding_nets.
+
+============================================
+==     Check for via cut blockage violation   ==
+============================================
+
+>>>>>> The following via cut blockages are wrongly treated as real vias.
+
+>>> No via cut blockage is wrongly treated as real via.
+
+============================================
+==     Check for custom via definition    ==
+============================================
+
+>>> No custom via definition has too many cuts
+
+============================================
+==          Check for via master          ==
+============================================
+
+>>> The total number of via master definition is 72
+
+===============================================
+==     Check non-default rule setting        ==
+===============================================
+
+>>> No NDR width is larger than signalRouteMaxWidth
+
+>>> No NDR shield width is larger than signalRouteMaxWidth
+
+======================================================
+==     Check redundant duplicated PG shapes         ==
+======================================================
+
+>>> No redundant duplicated PG shapes overlap with each other.
+
+=========================================================
+==     Check for shapes with no net  ==
+=========================================================
+
+>>> No shape with no net.
+
+=========================================================
+==     Check for high fanout net  ==
+=========================================================
+
+*****Start reporting antenna related parameters*****
+  Antenna/diode mode:
+    Antenna mode 4; diode mode 2
+      Metal lay (M1)0; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 456.000 43000.000 0.000)
+      Cut lay (VIA1)1; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 210.000 900.000 0.000)
+      Metal lay (M2)1; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 456.000 43000.000 0.000)
+      Cut lay (VIA2)2; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 210.000 900.000 0.000)
+      Metal lay (M3)2; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 456.000 43000.000 0.000)
+      Cut lay (VIA3)3; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 210.000 900.000 0.000)
+      Metal lay (M4)3; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 456.000 43000.000 0.000)
+      Cut lay (VIA4)4; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 210.000 900.000 0.000)
+      Metal lay (M5)4; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 456.000 43000.000 0.000)
+      Cut lay (VIA5)5; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 210.000 900.000 0.000)
+      Metal lay (M6)5; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 456.000 43000.000 0.000)
+      Cut lay (VIA6)6; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 210.000 900.000 0.000)
+      Metal lay (M7)6; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 456.000 43000.000 0.000)
+      Cut lay (VIA7)7; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 210.000 900.000 0.000)
+      Metal lay (M8)7; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 456.000 43000.000 0.000)
+      Cut lay (VIA8)8; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 210.000 900.000 0.000)
+      Metal lay (M9)8; maxRatio 1000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.060 0.000 8000.000 50000.000 0.000)
+  Top lay antenna ratio fix threshold == -1
+  Antenna max pin count threshold == -1
+  Check PG net == false
+  MergeGate == true
+  Break antenna to port mode == float
+  Break antenna to macro pin mode == normal
+*****End reporting antenna related parameters*****
+Warning: Skipping antenna analysis for net wb_clk_i. The pin wb_clk_i on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_rst_i. The pin wb_rst_i on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net arst_i. The pin arst_i on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_adr_i[2]. The pin wb_adr_i[2] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_adr_i[1]. The pin wb_adr_i[1] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_adr_i[0]. The pin wb_adr_i[0] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_dat_i[7]. The pin wb_dat_i[7] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_dat_i[6]. The pin wb_dat_i[6] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_dat_i[5]. The pin wb_dat_i[5] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_dat_i[4]. The pin wb_dat_i[4] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_dat_i[3]. The pin wb_dat_i[3] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_dat_i[2]. The pin wb_dat_i[2] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_dat_i[1]. The pin wb_dat_i[1] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_dat_i[0]. The pin wb_dat_i[0] on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_we_i. The pin wb_we_i on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_stb_i. The pin wb_stb_i on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net wb_cyc_i. The pin wb_cyc_i on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net scl_pad_i. The pin scl_pad_i on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net sda_pad_i. The pin sda_pad_i on cell routing does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net N43 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net N45 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net done as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net N121 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net n65 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net prer[2] as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/N105 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/n9 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/n10 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/n36 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/n47 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/N36 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/N67 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/N104 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/N139 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n450 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n490 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n107 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n140 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n142 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n167 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n169 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n170 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n171 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n173 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n174 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n175 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n176 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n177 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n380 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n65 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/n740 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/filter_cnt[4] as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/net_PTECO_HOLD_NET1 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/copt_net_33 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/net_PTECO_HOLD_NET2 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/net_PTECO_HOLD_NET3 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/net_PTECO_HOLD_NET4 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/net_PTECO_HOLD_NET5 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/copt_net_52 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/net_PTECO_HOLD_NET6 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net net_PTECO_HOLD_NET7 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net copt_net_104 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/net_PTECO_HOLD_NET16 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/bit_controller/net_PTECO_HOLD_NET17 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net net_PTECO_HOLD_NET23 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/net_PTECO_HOLD_NET24 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net net_PTECO_HOLD_NET26 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/net_PTECO_HOLD_NET35 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/net_PTECO_HOLD_NET37 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net net_PTECO_HOLD_NET39 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/net_PTECO_HOLD_NET41 as it is open. (ZRT-325)
+Warning: Skipping antenna analysis for net byte_controller/net_PTECO_HOLD_NET47 as it is open. (ZRT-325)
+Skipping antenna analysis for 19 nets as they don't have enough gate area info.
+Skipping antenna analysis for 53 additional nets as they are open.
+>>> Detected 2 high fanout nets.
+
+===========================================================
+==     Check library cell has non-routing layer pins     ==
+===========================================================
+
+>>> No cell has non-routing layer pins to be connected.
+
+============================================
+==     Check over promoted nets           ==
+============================================
+
+>>> No over promoted nets.
+
+End of check_routability
+rtapiOptAttrInterf: set attribute check_routability_called=1715848402 
+1
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  CR-011       Error  52         Cell instance %instance is off the %orientation minimum grid at ...
+  CR-030       Error  3          Port %instance %port at (%x1 %y1)_(%x2 %y2) on %layers is out of...
+  DFT-011      Info   1          The design has no scan chain defined in the scandef.
+  DMM-105      Info   30         Mismatch type %mmtype is detected on object type %objtype at obj...
+  ----------------------------------------------------------------------------------------------------
+  Total 86 EMS messages : 55 errors, 0 warnings, 31 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+       ZRT-015   Warn          1 Ignore contact %s.
+       ZRT-026   Warn          2 Layer %s default pitch %.3f may be too small to handle up/down v...
+       ZRT-027   Warn          1 Ignore %d top cell ports with no pins.
+       ZRT-311   Warn         19 Skipping antenna analysis for net %s. The pin %s on cell %s does...
+       ZRT-325   Warn         53 Skipping antenna analysis for net %s as it is open.
+       ZRT-511   Warn          1 Cell contains tie connections which are not connected to real PG.
+       ZRT-588  Error          1 The design is not legalized. Skip blocked port checkings.
+       ZRT-619   Info          1 Via ladder engine would be activated for pattern must join conne...
+       ZRT-626   Warn          2 High fanout net %s can affect runtime for antenna fixing.
+       ZRT-703   Info          1 Option route.detail.force_end_on_preferred_grid will be ignored ...
+       ZRT-706   Info          1 When applicable layer based tapering will taper up to %.2f in di...
+       ZRT-707   Info          1 When applicable Min-max layer allow_pin_connection mode will all...
+       ZRT-718   Info          1 When applicable Min-max layer allow_pin_connection mode will all...
+       ZRT-720   Warn          3 Port  %s at {{%.3f,%.3f} {%.3f,%.3f}} is out of boundary. Cannot...
+       ZRT-740   Warn          4 %s is unplaced.  This may impact routing result.
+       ZRT-763   Warn          2 Cell %s is placed overlapping with other cells at {{%.3f %.3f} {...
+       ZRT-764   Warn          2 PG net %s has opens.
+  ----------------------------------------------------------------------------------------------------
+  Total 96 non-EMS messages : 1 errors, 90 warnings, 5 info.
+  ----------------------------------------------------------------------------------------------------

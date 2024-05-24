@@ -1,0 +1,270 @@
+CRTE_SNAPSHOT_START
+
+SECTION_CRTE_VERSION
+3.0
+
+SECTION_PID
+2952
+
+SECTION_POLLING_INTERVAL
+5
+
+SECTION_DATE_TIME
+Thu May 16 06:29:36 EEST 2024 (1715830176)
+
+SECTION_OS_VERSION
+osname: Linux
+hostname: v23010007
+arch: x86_64
+release_version: 3.10.0-1160.108.1.el7.x86_64
+
+SECTION_IPC_INFO
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 4          vlsi       777        16384      1          dest         
+0x00000000 5          vlsi       777        7520256    2          dest         
+0x00000000 32779      vlsi       600        524288     2          dest         
+0x00000000 13         vlsi       777        7520256    2          dest         
+0x00000000 14         vlsi       600        524288     2          dest         
+0x00000000 65552      vlsi       777        7077888    2          dest         
+0x00000000 17         vlsi       600        524288     2          dest         
+0x00000000 32786      vlsi       777        7077888    2          dest         
+0x00000000 20         vlsi       600        524288     2          dest         
+0x00000000 21         vlsi       777        7077888    2        SECTION_ULIMIT
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 39970
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+SECTION_SYSCONF
+_SC_THREAD_SAFE_FUNCTIONS= 200809
+_SC_CLK_TCK= 100
+_SC_OPEN_MAX= 4096
+_SC_PAGE_SIZE= 4096
+_SC_ARG_MAX= 2097152
+_SC_CHILD_MAX= 4096
+_SC_LINE_MAX= 2048
+
+SECTION_FULL_COMMAND
+/eda/synopsys/icc2/V-2023.12/linux64/nwtn/bin/icc2_exec -root_path /eda/synopsys/icc2/V-2023.12
+
+SECTION_CPUINFO
+total_core: 4
+
+model_name:  Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single rsb_ctxsw fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt md_clear flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 2712
+core_per_socket: 0
+stepping: 3
+cache_size_kb: 8192
+ht: 0
+
+model_name:  Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single rsb_ctxsw fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt md_clear flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 2712
+core_per_socket: 0
+stepping: 3
+cache_size_kb: 8192
+ht: 0
+
+model_name:  Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single rsb_ctxsw fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt md_clear flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 2712
+core_per_socket: 0
+stepping: 3
+cache_size_kb: 8192
+ht: 0
+
+model_name:  Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single rsb_ctxsw fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt md_clear flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 2712
+core_per_socket: 0
+stepping: 3
+cache_size_kb: 8192
+ht: 0
+
+SECTION_OS_RELEASE_VERSION
+CentOS Linux release 7.9.2009 (Core)
+
+
+SECTION_SYS/VM
+/proc/sys/vm/admin_reserve_kbytes:8192
+/proc/sys/vm/block_dump:0
+/proc/sys/vm/dirty_background_bytes:0
+/proc/sys/vm/dirty_background_ratio:10
+/proc/sys/vm/dirty_bytes:0
+/proc/sys/vm/dirty_expire_centisecs:3000
+/proc/sys/vm/dirty_ratio:30
+/proc/sys/vm/dirty_writeback_centisecs:500
+/proc/sys/vm/drop_caches:0
+/proc/sys/vm/extfrag_threshold:500
+/proc/sys/vm/hugepages_treat_as_movable:0
+/proc/sys/vm/hugetlb_shm_group:0
+/proc/sys/vm/laptop_mode:0
+/proc/sys/vm/legacy_va_layout:0
+/proc/sys/vm/lowmem_reserve_ratio:256	256	32
+/proc/sys/vm/max_map_count:65530
+/proc/sys/vm/memory_failure_early_kill:0
+/proc/sys/vm/memory_failure_recovery:1
+/proc/sys/vm/min_free_kbytes:67584
+/proc/sys/vm/min_slab_ratio:5
+/proc/sys/vm/min_unmapped_ratio:1
+/proc/sys/vm/mmap_min_addr:4096
+/proc/sys/vm/nr_hugepages:0
+/proc/sys/vm/nr_hugepages_mempolicy:0
+/proc/sys/vm/nr_overcommit_hugepages:0
+/proc/sys/vm/nr_pdflush_threads:0
+/proc/sys/vm/numa_zonelist_order:default
+/proc/sys/vm/oom_dump_tasks:1
+/proc/sys/vm/oom_kill_allocating_task:0
+/proc/sys/vm/overcommit_kbytes:0
+/proc/sys/vm/overcommit_memory:0
+/proc/sys/vm/overcommit_ratio:50
+/proc/sys/vm/page-cluster:3
+/proc/sys/vm/panic_on_oom:0
+/proc/sys/vm/percpu_pagelist_fraction:0
+/proc/sys/vm/stat_interval:1
+/proc/sys/vm/swappiness:30
+/proc/sys/vm/user_reserve_kbytes:131072
+/proc/sys/vm/vfs_cache_pressure:100
+/proc/sys/vm/zone_reclaim_mode:0
+
+
+SECTION_SWAP
+swap_partition: /dev/dm-1
+size_gb: 13
+
+CRTE_SNAPSHOT_END
+
+CRTE_PERIODIC_START 1 1715830176083
+
+SECTION_MPSTAT
+total_core: 4
+
+CPU     %user   %kernel %wait   %idle   
+all   7.364337 2.163622 2.604024 87.868019
+0     6.964851 1.876591 2.053799 89.104759
+1     7.372426 2.107454 2.819274 87.700844
+2     7.090983 1.785308 2.801864 88.321846
+3     8.035997 2.892524 2.742461 86.329018
+SECTION_LOADAVG
+0.90 0.53 0.46 2/580 5602
+
+SECTION_PID_STATUS
+name: icc2_exec
+state: 1
+vmsize: 5430424
+vmrss: 1225924
+vmdata: 2951940
+vmstk: 156
+vmexe: 1252320
+vmlib: 306900
+threads: 18
+
+SECTION_PROCESS_CPU_UTIL
+pid: 2952
+cpu_total_time: 927335
+cpu_used_time: 89745
+cpu_p: 
+
+SECTION_SYSTEM_CPU_UTIL
+sys_cpu_p: 
+
+SECTION_MEMINFO
+memtotal: 10290088
+memfree: 3234732
+cached: 4611208
+swapcached: 0
+active: 2999352
+swaptotal: 14299132
+swapfree: 14299132
+
+SECTION_SMAPS
+shared_kb: 19928
+private_kb: 1206744
+
+SECTION_DF
+Filesystem  Size  Used Avail Use%
+filesystem        299G  267G  32G    89
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          69827024  2454983 67372041   4294966402
+
+SECTION_CWD
+Filesystem  Size  Used Avail Use%
+filesystem        299G  267G  32G    89
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          69827024  2454983 67372041   4294966402
+
+SECTION_DF
+Filesystem  Size  Used Avail Use%
+filesystem        299G  267G  32G    89
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          69827024  2454983 67372041   4294966402
+
+SECTION_SWAP_RATE
+blk_read: 4408
+blk_wrtn: 0
+swap_in_rate: 
+swap_out_rate: 
+swap_in_rate: 
+swap_out_rate: 
+
+SECTION_FD_SIZE
+files: 26
+total_size: 58926070
+
+SECTION_NET_INTERFACE
+total_eth_avbl: 3
+
+name net_rx_err net_rx_drp net_tx_err net_tx_drp 
+enp0s3:           0        0        0        0
+    lo:            0        0        0        0
+virbr0-nic:               0        0        0        0
+
+SECTION_NFSSTAT
+Error: Could not collect the data.
+
+SECTION_THREAD_CPU_UTIL
+2952 : 2952 (icc2_exec) R 2940 2940 2884 34816 2940 4202496 947076 339401 1027 11 21239 4299 2625 175 20 0 18 0 11713 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 140728528513104 139701014558557 8192 2147221247 18878464 1218113279 0 0 0 17 2 0 0 5359 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+2971 : 2971 (jemalloc_bg_thd) S 2940 2940 2884 34816 2940 1077944384 4 339401 0 11 0 0 2625 175 20 0 18 0 12947 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139700008154768 139701014546997 0 2147221247 18878464 1218113279 18446744071586289750 0 0 -1 2 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3048 : 3048 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 7 339401 0 11 0 0 2625 175 20 0 18 0 16167 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699988838240 139700216392515 0 2147221247 18878464 1218113279 18446744071587702261 0 0 -1 3 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3058 : 3058 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 773 339401 0 11 200 6 2625 175 20 0 18 0 16798 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699950450600 139700216405545 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 1 0 0 5 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3059 : 3059 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 635 339401 0 11 209 12 2625 175 20 0 18 0 16798 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699958843304 139700216405545 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 3 0 0 2 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3060 : 3060 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 399 339401 0 11 206 12 2625 175 20 0 18 0 16798 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699942057896 139700216405545 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 0 0 0 2 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3061 : 3061 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 14 339401 0 11 4488 6314 2625 175 20 0 18 0 16798 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699933664768 139700216195581 0 8192 18878464 1218113279 18446744071585990171 0 0 -1 3 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3085 : 3085 (QXcbEventQueue) S 2940 2940 2884 34816 2940 1077944384 26 339401 0 11 61 85 2625 175 20 0 18 0 18853 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699726235248 139700216384989 0 8192 18878464 1218113279 18446744071587702261 0 0 -1 0 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3091 : 3091 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 1 339401 0 11 383 1550 2625 175 20 0 18 0 19517 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699868845584 139700216392515 0 8192 18878464 1218113279 18446744071587702261 0 0 -1 1 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3099 : 3099 (QFileInfoGather) S 2940 2940 2884 34816 2940 1077944384 8 339401 0 11 0 0 2625 175 20 0 18 0 20375 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699877238496 139701014546997 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 0 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3104 : 3104 (Thread (pooled)) S 2940 2940 2884 34816 2940 1077944384 16 339401 0 11 23 12 2625 175 20 0 18 0 20843 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699361457936 139701014560413 0 8192 18878464 1218113279 18446744071585990171 0 0 -1 1 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3105 : 3105 (Thread (pooled)) S 2940 2940 2884 34816 2940 1077944384 852 339401 0 11 209 11 2625 175 20 0 18 0 20873 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699353065168 139701014546997 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 3 0 0 5 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3152 : 3152 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 1 339401 0 11 0 0 2625 175 20 0 18 0 25653 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139699337049968 139701014546997 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 3 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3159 : 3159 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 1 339401 0 11 0 0 2625 175 20 0 18 0 25999 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139698253715344 139701014546997 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 3 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3160 : 3160 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 2 339401 0 11 0 0 2625 175 20 0 18 0 25999 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139698245195696 139701014546997 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 3 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3161 : 3161 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 3 339401 0 11 0 0 2625 175 20 0 18 0 25999 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139698236802992 139701014546997 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 3 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3162 : 3162 (icc2_exec) S 2940 2940 2884 34816 2940 1077944384 1 339401 0 11 0 0 2625 175 20 0 18 0 25999 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139698228410288 139701014546997 0 8192 18878464 1218113279 18446744071586289750 0 0 -1 3 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+3165 : 3165 (Qt bearer threa) S 2940 2940 2884 34816 2940 1077944384 28 339401 0 11 12 18 2625 175 20 0 18 0 26017 5560754176 306481 18446744073709551615 2097152 1284469152 140728528533136 139698212861424 139700216385183 0 8192 18878464 1218113279 18446744071587702261 0 0 -1 3 0 0 0 0 0 1286254592 1337750056 2017472512 140728528537828 140728528537924 140728528537924 140728528547776 0
+
+CRTE_PERIODIC_END 1 1715830176083

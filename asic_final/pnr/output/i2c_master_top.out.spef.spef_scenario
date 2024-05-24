@@ -1,0 +1,6 @@
+/eda/synopsys/final_project/pnr/output/i2c_master_top.out.spef.minTLU_-40.spef for scenarios: 
+	 scenario: default, corner type: late
+
+/eda/synopsys/final_project/pnr/output/i2c_master_top.out.spef.maxTLU_-40.spef for scenarios: 
+	 scenario: default, corner type: early
+

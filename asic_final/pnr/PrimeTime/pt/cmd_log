@@ -1,0 +1,7 @@
+source /eda/synopsys/prime/V-2023.12/admin/setup/.synopsys_pt.setup
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Cells}
+gui_execute_script_from_dlg
+gui_show_man_page insert
+gui_show_man_page fix
+fix_eco_timing -type hold -method insert_buffer -buffer_list {NBUFF2 NBUFfX4 NBUFFX8 NBUFFX16 NBUFFX32}
+

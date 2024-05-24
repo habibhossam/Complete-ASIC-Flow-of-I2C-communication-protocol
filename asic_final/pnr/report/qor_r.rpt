@@ -1,0 +1,106 @@
+****************************************
+Report : qor
+Design : i2c_master_top
+Version: V-2023.12
+Date   : Fri May 17 14:59:23 2024
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'counter.dlib:routing.design'. (TIM-125)
+Information: Design routing has 824 nets, 0 global routed, 822 detail routed. (NEX-024)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 822, routed nets = 822, across physical hierarchy nets = 0, parasitics cached nets = 822, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Information: Timer using 'CRPR'. (TIM-050)
+
+
+Scenario           'default'
+Timing Path Group  'wb_clk_i'
+----------------------------------------
+Levels of Logic:                     29
+Critical Path Length:              1.29
+Critical Path Slack:               3.44
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'INPUTS'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:              3.18
+Critical Path Slack:               1.62
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'OUTPUTS'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.20
+Critical Path Slack:               2.29
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              4
+Hierarchical Port Count:            171
+Leaf Cell Count:                    726
+Buf/Inv Cell Count:                 220
+Buf Cell Count:                     167
+Inv Cell Count:                      53
+Combinational Cell Count:           573
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:              153
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       153
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             6142.46
+Noncombinational Area:          4854.99
+Buf/Inv Area:                   2752.82
+Total Buffer Area:              2446.85
+Total Inverter Area:             305.97
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                   14205.23
+Net YLength:                   13821.83
+----------------------------------------
+Cell Area (netlist):                          10997.45
+Cell Area (netlist and physical only):        14094.03
+Net Length:                    28027.06
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:               829
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

@@ -1,0 +1,362 @@
+
+
+##################################################################################
+# Copyright 2002-2024 Synopsys, Inc.  All rights reserved.
+# This Synopsys product and all associated documentation and files are
+# proprietary to Synopsys, Inc. and may only be used pursuant to the terms
+# and conditions of a written license agreement with Synopsys, Inc. All other
+# use, reproduction, modification, or distribution of the Synopsys product or
+# the associated documentation or files is strictly prohibited.
+##################################################################################
+
+
+## SVF file read: /eda/synopsys/final_project/syn/default.svf
+
+guide \
+  -tool { Design Compiler } \
+  -version { V-2023.12 built Nov 27, 2023 } \
+  -SVF { 21.230 } \
+  -timestamp { Wed May 15 20:01:32 2024 } 
+
+## Operation Id: 1
+guide_environment \
+  { { dc_product_version V-2023.12 } \
+    { dc_product_build_date { Nov 27, 2023 } } \
+    { bus_dimension_separator_style ][ } \
+    { bus_extraction_style %s\[%d:%d\] } \
+    { bus_multiple_separator_style , } \
+    { bus_naming_style %s[%d] } \
+    { bus_range_separator_style : } \
+    { dc_allow_rtl_pg false } \
+    { hdlin_allow_4state_parameters TRUE } \
+    { hdlin_unified_rtl_read FALSE } \
+    { hdlin_enable_hier_naming FALSE } \
+    { hdlin_enable_upf_compatible_naming FALSE } \
+    { hdlin_vhdl_preserve_case FALSE } \
+    { hdlin_generate_naming_style %s_%d } \
+    { hdlin_generate_separator_style _ } \
+    { hdlin_infer_enumerated_types FALSE } \
+    { hdlin_interface_port_downto FALSE } \
+    { hdlin_optimize_enum_types FALSE } \
+    { hdlin_preserve_sequential none } \
+    { hdlin_sverilog_std 2017 } \
+    { hdlin_sv_packages dont_chain } \
+    { hdlin_sv_union_member_naming FALSE } \
+    { hdlin_vhdl_std 2008 } \
+    { hdlin_vrlg_std 2005 } \
+    { hdlin_v2005_replication_semantics TRUE } \
+    { hdlin_while_loop_iterations 4096 } \
+    { hdlin_enable_verilog_configurations_canonical TRUE } \
+    { hdlin_enable_verilog_configurations_array_n_block TRUE } \
+    { hdlin_enable_persistent_macros FALSE } \
+    { hdlin_persistent_macros_filename syn_auto_generated_macro_file.sv } \
+    { link_portname_allow_period_to_match_underscore false } \
+    { link_portname_allow_square_bracket_to_match_underscore false } \
+    { port_complement_naming_style %s_BAR } \
+    { simplified_verification_mode FALSE } \
+    { template_naming_style %s_%p } \
+    { template_parameter_style %s%d } \
+    { template_separator_style _ } \
+    { upf_iso_filter_elements_with_applies_to ENABLE } \
+    { upf_isols_allow_instances_in_elements true } \
+    { link_library { * saed90nm_max_lth.db } } \
+    { target_library saed90nm_max_lth.db } \
+    { search_path /eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models } \
+    { synopsys_root /eda/synopsys/syn/V-2023.12 } \
+    { cwd /eda/synopsys/final_project/syn } \
+    { define_design_lib { -path ./work work } } \
+    { analyze { -format verilog -library work /eda/synopsys/final_project/rtl/i2c_master_top.v } } \
+    { compile_seqmap_propagate_high_effort true } } 
+
+## Operation Id: 2
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 3
+guide_file_info \
+  -file { /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v } \
+  -cksum_file { Svf1/checksums/13719_1f7bf178a1b3b0950f4c17391f29d653.cksum } \
+  -language { svfFileInfoLangVerilog } \
+  -nameID { 13719 } \
+  -cksum { 1f7bf178a1b3b0950f4c17391f29d653 } \
+  -version { 21.230 } 
+
+## Operation Id: 4
+guide_file_info \
+  -file { /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v } \
+  -cksum_file { Svf1/checksums/57913_953aebec0bdb7308b4d4e3cee8baa514.cksum } \
+  -language { svfFileInfoLangVerilog } \
+  -nameID { 57913 } \
+  -cksum { 953aebec0bdb7308b4d4e3cee8baa514 } \
+  -version { 21.230 } 
+
+## Operation Id: 5
+guide_file_info \
+  -file { /eda/synopsys/final_project/rtl/i2c_master_defines.v } \
+  -cksum_file { Svf1/checksums/52022_b220b22dedef9e43dfb5da4e81d7559b.cksum } \
+  -language { svfFileInfoLangVerilog } \
+  -nameID { 52022 } \
+  -cksum { b220b22dedef9e43dfb5da4e81d7559b } \
+  -version { 21.230 } 
+
+## Operation Id: 6
+guide_file_info \
+  -file { /eda/synopsys/final_project/rtl/i2c_master_top.v } \
+  -cksum_file { Svf1/checksums/54427_3dbcb185e6f27984f25fb34740d17ca4.cksum } \
+  -language { svfFileInfoLangVerilog } \
+  -nameID { 54427 } \
+  -cksum { 3dbcb185e6f27984f25fb34740d17ca4 } \
+  -version { 21.230 } 
+
+## Operation Id: 7
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 8
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 9
+guide_instance_map \
+  -design { i2c_master_top } \
+  -instance { byte_controller } \
+  -linked { i2c_master_byte_ctrl } 
+
+## Operation Id: 10
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 11
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 12
+guide_instance_map \
+  -design { i2c_master_byte_ctrl } \
+  -instance { bit_controller } \
+  -linked { i2c_master_bit_ctrl } 
+
+## Operation Id: 13
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 14
+guide_environment \
+  { { precompile_db_list /eda/synopsys/syn/V-2023.12/libraries/syn/gtech.db } } 
+
+## Operation Id: 15
+guide_environment \
+  { { elaborate { -library work i2c_master_top } } \
+    { current_design i2c_master_top } \
+    { compile_seqmap_propagate_high_effort true } } 
+
+## Operation Id: 16
+guide_transformation \
+  -design { i2c_master_bit_ctrl } \
+  -type { map } \
+  -input { 16 src4 } \
+  -output { 16 src5 } \
+  -pre_resource { { 16 } sub_228 = USUB { { src4 } { `b0000000000000001 } } } \
+  -pre_assign { src5 = { sub_228.out.1 } } \
+  -post_resource { { 16 } sub_228 = SUB { { src4 } { `b0000000000000001 } } } \
+  -post_assign { src5 = { sub_228.out.1 } } 
+
+## Operation Id: 17
+guide_transformation \
+  -design { i2c_master_bit_ctrl } \
+  -type { map } \
+  -input { 14 src1 } \
+  -output { 14 src3 } \
+  -pre_resource { { 14 } sub_260 = USUB { { src1 } { `b00000000000001 } } } \
+  -pre_assign { src3 = { sub_260.out.1 } } \
+  -post_resource { { 14 } sub_260 = SUB { { src1 } { `b00000000000001 } } } \
+  -post_assign { src3 = { sub_260.out.1 } } 
+
+## Operation Id: 18
+guide_reg_constant \
+  -design { i2c_master_bit_ctrl } \
+  -replaced { svfTrue } \
+  { c_state_reg[17] } \
+  { 0 } 
+
+## Operation Id: 19
+guide_transformation \
+  -design { i2c_master_byte_ctrl } \
+  -type { map } \
+  -input { 3 src78 } \
+  -output { 3 src80 } \
+  -pre_resource { { 3 } sub_195 = USUB { { src78 } { `b001 } } } \
+  -pre_assign { src80 = { sub_195.out.1 } } \
+  -post_resource { { 3 } sub_195 = SUB { { src78 } { `b001 } } } \
+  -post_assign { src80 = { sub_195.out.1 } } 
+
+## Operation Id: 20
+guide_uniquify \
+  -design { i2c_master_byte_ctrl } \
+  { { sub_195 DW01_dec_width3_DW01_dec_0 } } 
+
+## Operation Id: 21
+guide_uniquify \
+  -design { i2c_master_top } \
+  { { byte_controller/bit_controller/sub_260 i2c_master_bit_ctrl_DW01_dec_0_DW01_dec_1 } } 
+
+## Operation Id: 22
+guide_uniquify \
+  -design { i2c_master_top } \
+  { { byte_controller/bit_controller/sub_228 i2c_master_bit_ctrl_DW01_dec_1_DW01_dec_2 } } 
+
+## Operation Id: 23
+guide_environment \
+  { { postcompile_db_list /eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db } } 
+
+## Operation Id: 24
+guide_change_names \
+  -design { i2c_master_top } \
+  { { cell ctr_reg[7] ctr_reg_7_ } \
+    { cell ctr_reg[6] ctr_reg_6_ } \
+    { cell ctr_reg[5] ctr_reg_5_ } \
+    { cell ctr_reg[4] ctr_reg_4_ } \
+    { cell ctr_reg[3] ctr_reg_3_ } \
+    { cell ctr_reg[2] ctr_reg_2_ } \
+    { cell ctr_reg[1] ctr_reg_1_ } \
+    { cell ctr_reg[0] ctr_reg_0_ } \
+    { cell txr_reg[7] txr_reg_7_ } \
+    { cell txr_reg[6] txr_reg_6_ } \
+    { cell txr_reg[5] txr_reg_5_ } \
+    { cell txr_reg[4] txr_reg_4_ } \
+    { cell txr_reg[3] txr_reg_3_ } \
+    { cell txr_reg[2] txr_reg_2_ } \
+    { cell txr_reg[1] txr_reg_1_ } \
+    { cell txr_reg[0] txr_reg_0_ } \
+    { cell prer_reg[15] prer_reg_15_ } \
+    { cell prer_reg[14] prer_reg_14_ } \
+    { cell prer_reg[13] prer_reg_13_ } \
+    { cell prer_reg[12] prer_reg_12_ } \
+    { cell prer_reg[11] prer_reg_11_ } \
+    { cell prer_reg[10] prer_reg_10_ } \
+    { cell prer_reg[9] prer_reg_9_ } \
+    { cell prer_reg[8] prer_reg_8_ } \
+    { cell prer_reg[7] prer_reg_7_ } \
+    { cell prer_reg[6] prer_reg_6_ } \
+    { cell prer_reg[5] prer_reg_5_ } \
+    { cell prer_reg[4] prer_reg_4_ } \
+    { cell prer_reg[3] prer_reg_3_ } \
+    { cell prer_reg[2] prer_reg_2_ } \
+    { cell prer_reg[1] prer_reg_1_ } \
+    { cell prer_reg[0] prer_reg_0_ } \
+    { cell cr_reg[3] cr_reg_3_ } \
+    { cell cr_reg[7] cr_reg_7_ } \
+    { cell cr_reg[6] cr_reg_6_ } \
+    { cell wb_dat_o_reg[6] wb_dat_o_reg_6_ } \
+    { cell cr_reg[5] cr_reg_5_ } \
+    { cell cr_reg[4] cr_reg_4_ } \
+    { cell wb_dat_o_reg[4] wb_dat_o_reg_4_ } \
+    { cell wb_dat_o_reg[3] wb_dat_o_reg_3_ } \
+    { cell cr_reg[2] cr_reg_2_ } \
+    { cell wb_dat_o_reg[2] wb_dat_o_reg_2_ } \
+    { cell cr_reg[1] cr_reg_1_ } \
+    { cell cr_reg[0] cr_reg_0_ } \
+    { cell wb_dat_o_reg[5] wb_dat_o_reg_5_ } \
+    { cell wb_dat_o_reg[7] wb_dat_o_reg_7_ } \
+    { cell wb_dat_o_reg[1] wb_dat_o_reg_1_ } \
+    { cell wb_dat_o_reg[0] wb_dat_o_reg_0_ } } 
+
+## Operation Id: 25
+guide_change_names \
+  -design { i2c_master_byte_ctrl } \
+  { { cell sr_reg[1] sr_reg_1_ } \
+    { cell sr_reg[2] sr_reg_2_ } \
+    { cell sr_reg[3] sr_reg_3_ } \
+    { cell sr_reg[4] sr_reg_4_ } \
+    { cell sr_reg[5] sr_reg_5_ } \
+    { cell sr_reg[6] sr_reg_6_ } \
+    { cell sr_reg[7] sr_reg_7_ } \
+    { cell sr_reg[0] sr_reg_0_ } \
+    { cell dcnt_reg[0] dcnt_reg_0_ } \
+    { cell dcnt_reg[1] dcnt_reg_1_ } \
+    { cell dcnt_reg[2] dcnt_reg_2_ } \
+    { cell c_state_reg[1] c_state_reg_1_ } \
+    { cell c_state_reg[4] c_state_reg_4_ } \
+    { cell core_cmd_reg[1] core_cmd_reg_1_ } \
+    { cell core_cmd_reg[0] core_cmd_reg_0_ } \
+    { cell c_state_reg[0] c_state_reg_0_ } \
+    { cell c_state_reg[2] c_state_reg_2_ } \
+    { cell c_state_reg[3] c_state_reg_3_ } \
+    { cell core_cmd_reg[2] core_cmd_reg_2_ } \
+    { cell core_cmd_reg[3] core_cmd_reg_3_ } } 
+
+## Operation Id: 26
+guide_change_names \
+  -design { i2c_master_bit_ctrl } \
+  { { cell cSDA_reg[0] cSDA_reg_0_ } \
+    { cell cSDA_reg[1] cSDA_reg_1_ } \
+    { cell cSCL_reg[0] cSCL_reg_0_ } \
+    { cell cSCL_reg[1] cSCL_reg_1_ } \
+    { cell filter_cnt_reg[0] filter_cnt_reg_0_ } \
+    { cell filter_cnt_reg[7] filter_cnt_reg_7_ } \
+    { cell filter_cnt_reg[1] filter_cnt_reg_1_ } \
+    { cell filter_cnt_reg[2] filter_cnt_reg_2_ } \
+    { cell filter_cnt_reg[3] filter_cnt_reg_3_ } \
+    { cell filter_cnt_reg[4] filter_cnt_reg_4_ } \
+    { cell filter_cnt_reg[5] filter_cnt_reg_5_ } \
+    { cell filter_cnt_reg[6] filter_cnt_reg_6_ } \
+    { cell filter_cnt_reg[8] filter_cnt_reg_8_ } \
+    { cell filter_cnt_reg[9] filter_cnt_reg_9_ } \
+    { cell filter_cnt_reg[10] filter_cnt_reg_10_ } \
+    { cell filter_cnt_reg[11] filter_cnt_reg_11_ } \
+    { cell filter_cnt_reg[12] filter_cnt_reg_12_ } \
+    { cell filter_cnt_reg[13] filter_cnt_reg_13_ } \
+    { cell fSCL_reg[0] fSCL_reg_0_ } \
+    { cell fSCL_reg[1] fSCL_reg_1_ } \
+    { cell fSCL_reg[2] fSCL_reg_2_ } \
+    { cell fSDA_reg[0] fSDA_reg_0_ } \
+    { cell fSDA_reg[1] fSDA_reg_1_ } \
+    { cell fSDA_reg[2] fSDA_reg_2_ } \
+    { cell c_state_reg[0] c_state_reg_0_ } \
+    { cell cnt_reg[0] cnt_reg_0_ } \
+    { cell c_state_reg[1] c_state_reg_1_ } \
+    { cell c_state_reg[2] c_state_reg_2_ } \
+    { cell c_state_reg[3] c_state_reg_3_ } \
+    { cell c_state_reg[4] c_state_reg_4_ } \
+    { cell c_state_reg[13] c_state_reg_13_ } \
+    { cell c_state_reg[14] c_state_reg_14_ } \
+    { cell c_state_reg[15] c_state_reg_15_ } \
+    { cell c_state_reg[16] c_state_reg_16_ } \
+    { cell c_state_reg[5] c_state_reg_5_ } \
+    { cell c_state_reg[6] c_state_reg_6_ } \
+    { cell c_state_reg[7] c_state_reg_7_ } \
+    { cell c_state_reg[8] c_state_reg_8_ } \
+    { cell c_state_reg[9] c_state_reg_9_ } \
+    { cell c_state_reg[10] c_state_reg_10_ } \
+    { cell c_state_reg[11] c_state_reg_11_ } \
+    { cell c_state_reg[12] c_state_reg_12_ } \
+    { cell cnt_reg[15] cnt_reg_15_ } \
+    { cell cnt_reg[1] cnt_reg_1_ } \
+    { cell cnt_reg[2] cnt_reg_2_ } \
+    { cell cnt_reg[3] cnt_reg_3_ } \
+    { cell cnt_reg[4] cnt_reg_4_ } \
+    { cell cnt_reg[5] cnt_reg_5_ } \
+    { cell cnt_reg[6] cnt_reg_6_ } \
+    { cell cnt_reg[7] cnt_reg_7_ } \
+    { cell cnt_reg[8] cnt_reg_8_ } \
+    { cell cnt_reg[9] cnt_reg_9_ } \
+    { cell cnt_reg[10] cnt_reg_10_ } \
+    { cell cnt_reg[11] cnt_reg_11_ } \
+    { cell cnt_reg[12] cnt_reg_12_ } \
+    { cell cnt_reg[13] cnt_reg_13_ } \
+    { cell cnt_reg[14] cnt_reg_14_ } } 
+
+## Operation Id: 27
+guide_environment \
+  { { write_file { -format verilog -hierarchy -output /eda/synopsys/final_project/syn/output/i2c_master_top.v } } \
+    { write_file { -format ddc -hierarchy -output /eda/synopsys/final_project/syn/output/i2c_master_top.ddc } } \
+    { compile_seqmap_propagate_high_effort true } } 
+
+setup
+

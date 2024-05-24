@@ -1,0 +1,67 @@
+****************************************
+Report : qor
+Design : i2c_master_top
+Version: V-2023.12
+Date   : Fri May 17 15:35:42 2024
+****************************************
+
+  Timing Path Group 'INPUTS' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            6
+  Critical Path Length:                    3.04
+  Critical Path Slack:                     1.87
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'OUTPUTS' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            1
+  Critical Path Length:                    0.45
+  Critical Path Slack:                     2.33
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'wb_clk_i' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           32
+  Critical Path Length:                    1.43
+  Critical Path Slack:                     3.48
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'wb_clk_i' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            3
+  Critical Path Length:                    0.42
+  Critical Path Slack:                     0.00
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:                 551.70
+  Total cell area:                     12412.04
+  Design Area:                         12963.74
+  ---------------------------------------------
+
+
+  Cell & Pin Count
+  ---------------------------------------------
+  Pin Count:                               2868
+  Hierarchical Cell Count:                    4
+  Hierarchical Port Count:                  163
+  Leaf Cell Count:                          781
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:             2868
+  Total DRC Cost:                          0.00
+  ---------------------------------------------
+
+1

@@ -1,0 +1,104 @@
+<Database>
+versionNumber:2
+Name/eda/synopsys/final_project/pnr/check_design.ems
+Creation TimeThu May 16 11:33:21 2024
+Modified TimeThu May 16 11:33:22 2024
+Design Namerouting
+Library Namecounter.dlib
+</Database>
+<RuleCount>
+CR-01152
+CR-0303
+DFT-0111
+DMM-10530
+</RuleCount>
+<UserDefinedRules>
+</UserDefinedRules>
+<Messages>
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X16_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEAD2X16)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X16_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEAD2X16)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X16_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEAD2X16)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X2_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEAD2X2)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X2_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEAD2X2)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X2_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEAD2X2)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X32_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEAD2X32)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X32_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEAD2X32)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X32_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEAD2X32)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X4_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEAD2X4)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X4_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEAD2X4)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X4_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEAD2X4)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X8_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEAD2X8)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X8_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEAD2X8)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEAD2X8_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEAD2X8)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX16_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEADX16)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX16_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEADX16)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX16_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEADX16)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX2_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEADX2)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX2_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEADX2)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX2_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEADX2)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX32_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEADX32)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX32_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEADX32)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX32_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEADX32)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX4_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEADX4)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX4_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEADX4)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX4_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEADX4)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX8_VDD10mmtypelib_port_direction10objnameVDD (saed90nm_max_lth/HEADX8)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX8_VDDG10mmtypelib_port_direction10objnameVDDG (saed90nm_max_lth/HEADX8)10objtypelib_pin10repairedstateaccepted10
+DMM-105Informationmmactionaccept10mmhandlerchange_lib_port_direction10mmobjnamelib_port_direction_saed90nm_max_lth/HEADX8_VSS10mmtypelib_port_direction10objnameVSS (saed90nm_max_lth/HEADX8)10objtypelib_pin10repairedstateaccepted10
+DFT-011Informationreason10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF210orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF410orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF610orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF810orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF810orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1010orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1010orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1110orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1110orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/sub_228/U_PTECO_HOLD_BUF1310orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/sub_228/U_PTECO_HOLD_BUF1410orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1510orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1510orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1710orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1810orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1810orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1910orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF1910orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF2110orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF2110orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF2210orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF2210orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF2510orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF2510orientationY10
+CR-011ErrorinstanceU_PTECO_HOLD_BUF2810orientationX10
+CR-011ErrorinstanceU_PTECO_HOLD_BUF2810orientationY10
+CR-011Errorinstancebyte_controller/U_PTECO_HOLD_BUF2910orientationX10
+CR-011Errorinstancebyte_controller/U_PTECO_HOLD_BUF2910orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/sub_260/U_PTECO_HOLD_BUF3110orientationY10
+CR-011ErrorinstanceU_PTECO_HOLD_BUF3210orientationX10
+CR-011Errorinstancebyte_controller/U_PTECO_HOLD_BUF3310orientationY10
+CR-011ErrorinstanceU_PTECO_HOLD_BUF3410orientationX10
+CR-011Errorinstancebyte_controller/U_PTECO_HOLD_BUF3510orientationY10
+CR-011ErrorinstanceU_PTECO_HOLD_BUF3810orientationX10
+CR-011ErrorinstanceU_PTECO_HOLD_BUF3810orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF4010orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF4210orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF4210orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF4310orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF4410orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF4510orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF4510orientationY10
+CR-011Errorinstancebyte_controller/U_PTECO_HOLD_BUF4810orientationY10
+CR-011ErrorinstanceU_PTECO_HOLD_BUF4910orientationX10
+CR-011ErrorinstanceU_PTECO_HOLD_BUF4910orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF5010orientationX10
+CR-011Errorinstancebyte_controller/U_PTECO_HOLD_BUF5110orientationX10
+CR-011Errorinstancebyte_controller/U_PTECO_HOLD_BUF5110orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF5210orientationY10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF5310orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF5410orientationX10
+CR-011Errorinstancebyte_controller/bit_controller/U_PTECO_HOLD_BUF5410orientationY10
+CR-030Errorinstancebyte_controller/U_PTECO_HOLD_BUF2410layerslayer M110portZ10
+CR-030Errorinstancebyte_controller/U_PTECO_HOLD_BUF2410layerslayer M110portVDD10
+CR-030Errorinstancebyte_controller/U_PTECO_HOLD_BUF2410layerslayer M110portVSS10
+</Messages>

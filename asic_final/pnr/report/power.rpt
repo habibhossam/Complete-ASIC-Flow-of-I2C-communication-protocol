@@ -1,0 +1,102 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : i2c_master_top
+Version: V-2023.12
+Date   : Fri May 17 15:03:09 2024
+****************************************
+Information: Activity propagation will be performed for scenario default.
+Information: Doing activity propagation for mode 'default' and corner 'default' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario default (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 7 ****
+Information: The RC mode used is DR for design 'i2c_master_top'. (NEX-022)
+---extraction options---
+Corner: default
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.enable_coupling_cap    : false
+Extracting design: routing 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 822 nets are successfully extracted. (NEX-028)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Design Average RC for design routing  (NEX-011)
+Information: r = 0.530750 ohm/um, via_r = 0.873481 ohm/cut, c = 0.089126 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.562500 ohm/um, via_r = 0.880232 ohm/cut, c = 0.102083 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Mode: default
+Corner: default
+Scenario: default
+Voltage: 1.08
+Temperature: -40.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+GVDD (power) probability 1.00 (default)
+GVSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell txr_reg_7_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell txr_reg_6_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell txr_reg_5_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell txr_reg_4_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell txr_reg_3_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell txr_reg_2_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell txr_reg_1_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell txr_reg_0_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell cr_reg_3_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell cr_reg_6_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+Warning: Rise-Fall toggles on pin byte_controller/U69/Q are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/U73/Q are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/bit_controller/U142/QN are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/bit_controller/U143/QN are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/bit_controller/U145/QN are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/bit_controller/U150/QN are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/bit_controller/copt_h_inst_841/Z are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/bit_controller/copt_h_inst_844/Z are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/bit_controller/copt_h_inst_895/Z are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin byte_controller/U_PTECO_HOLD_BUF30/Z are impossible given input states; converted to zero toggles. (POW-069)
+Note - message 'POW-069' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 6.49e+07 pW ( 35.9%)
+  Net Switching Power    = 1.16e+08 pW ( 64.1%)
+Total Dynamic Power      = 1.81e+08 pW (100.0%)
+
+Cell Leakage Power       = 8.03e+06 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             2.79e+07               9.18e+07               5.23e+04               1.20e+08    ( 63.4%)        i
+register                 -1.08e+06               4.23e+06               2.61e+06               5.77e+06    (  3.1%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             3.81e+07               1.97e+07               5.37e+06               6.32e+07    ( 33.5%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     6.49e+07 pW            1.16e+08 pW            8.03e+06 pW            1.89e+08 pW
+1

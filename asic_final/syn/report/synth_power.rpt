@@ -1,0 +1,68 @@
+Loading db file '/eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : i2c_master_top
+Version: V-2023.12
+Date   : Fri May 17 14:20:56 2024
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_max_lth (File: /eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max_lth
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+i2c_master_top         8000              saed90nm_max_lth
+i2c_master_byte_ctrl   8000              saed90nm_max_lth
+i2c_master_bit_ctrl    8000              saed90nm_max_lth
+i2c_master_bit_ctrl_DW01_dec_0_DW01_dec_1
+                       8000              saed90nm_max_lth
+i2c_master_bit_ctrl_DW01_dec_1_DW01_dec_2
+                       8000              saed90nm_max_lth
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  62.3288 uW   (59%)
+  Net Switching Power  =  43.9260 uW   (41%)
+                         ---------
+Total Dynamic Power    = 106.2549 uW  (100%)
+
+Cell Leakage Power     =   4.5831 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     21.4621            0.0000            0.0000           21.4621  (  19.36%)  i
+register           9.1602           11.1681        2.5315e+06           22.8599  (  20.62%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     31.7065           32.7579        2.0515e+06           66.5159  (  60.01%)
+--------------------------------------------------------------------------------------------------
+Total             62.3288 uW        43.9260 uW     4.5831e+06 pW       110.8379 uW
+1

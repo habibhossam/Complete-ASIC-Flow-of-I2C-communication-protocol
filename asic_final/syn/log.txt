@@ -1,0 +1,815 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version V-2023.12 for linux64 - Nov 27, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/vlsi/.synopsys_dc_gui/preferences.tcl
+Current time:       Wed May 15 20:01:10 2024
+Hostname:           v23010007
+CPU Model:          Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+CPU Details:        Cores = 4 : Sockets = 1 : Cache Size = 8192 KB : Freq = 2.71 GHz
+OS:                 Linux 3.10.0-1160.108.1.el7.x86_64
+RAM:                  9 GB (Free   5 GB)
+Swap:                13 GB (Free  13 GB)
+Work Filesystem:    / mounted to /dev/mapper/centos-root
+Tmp Filesystem:     / mounted to /dev/mapper/centos-root
+Work Disk:          299 GB (Free  32 GB)
+Tmp Disk:           299 GB (Free  32 GB)
+
+CPU Load: 15%, Ram Free: 5 GB, Swap Free: 13 GB, Work Disk Free: 32 GB, Tmp Disk Free: 32 GB
+dc_shell> set design i2c_master_top
+i2c_master_top
+dc_shell> 
+dc_shell> set_app_var search_path "/eda/synopsys/project/standardCell/SAED90nm_E DK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/model s"
+/eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models
+dc_shell> set_app_var target_library "saed90nm_max_lth.db"
+saed90nm_max_lth.db
+dc_shell> set_app_var link_library "* $target_library"
+* saed90nm_max_lth.db
+dc_shell> 
+dc_shell> 
+dc_shell> sh rm -rf work
+dc_shell> sh mkdir -p work
+dc_shell> define_design_lib work -path ./work
+1
+dc_shell> 
+dc_shell> 
+dc_shell> analyze -library work -format verilog /eda/synopsys/final_project/rtl/ ${design}.v
+Running PRESTO HDLC
+Compiling source file /eda/synopsys/final_project/rtl/i2c_master_top.v
+Opening include file /eda/synopsys/final_project/rtl/i2c_master_defines.v
+Opening include file /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v
+Opening include file /eda/synopsys/final_project/rtl/i2c_master_defines.v
+Opening include file /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v
+Opening include file /eda/synopsys/final_project/rtl/i2c_master_defines.v
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:213: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:214: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:218: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:219: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:223: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:224: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:228: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:229: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:240: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:241: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:245: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:246: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:285: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:286: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:288: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:289: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:293: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:294: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:296: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:297: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:301: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:302: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:304: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:305: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:315: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:316: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:320: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:321: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:325: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:326: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:332: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:333: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:334: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:344: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:346: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:348: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:352: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:354: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:356: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:361: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:389: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:390: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:391: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:392: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:393: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:397: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:398: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:399: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:400: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:401: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:405: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:413: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:414: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:415: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:416: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:417: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:420: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:421: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:422: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:428: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:429: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:430: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:431: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:436: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:437: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:438: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:439: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:444: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:445: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:446: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:447: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:452: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:453: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:454: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:455: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:460: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:461: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:462: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:463: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:464: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:470: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:471: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:472: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:473: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:478: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:479: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:480: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:481: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:486: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:487: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:488: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:489: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:494: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:495: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:496: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:497: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:498: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:504: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:505: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:506: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:507: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:512: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:513: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:514: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:515: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:520: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:521: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:522: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:523: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:528: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:529: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:530: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:531: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:532: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:538: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:539: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:540: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:541: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:546: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:547: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:548: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:549: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:555: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:556: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:557: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:558: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:563: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:564: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:565: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:566: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:567: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:178: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:180: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:182: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:184: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:189: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:191: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:193: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:195: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:207: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:208: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:209: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:210: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:211: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:212: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:213: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:217: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:218: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:219: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:220: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:221: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:222: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:223: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:228: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:229: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:230: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:231: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:239: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:240: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:244: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:245: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:249: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:250: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:254: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:255: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:258: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:266: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:267: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:271: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:272: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:275: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:282: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:283: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:287: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:288: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:289: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:297: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:298: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:302: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:303: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:306: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:307: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:315: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:316: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:320: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:321: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:324: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:328: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:330: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:333: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:338: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:339: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:342: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:161: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:167: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:168: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:169: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:170: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:171: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:172: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:173: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:174: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:182: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:183: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:184: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:188: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:189: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:190: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:195: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:197: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:198: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:205: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:207: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:211: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:216: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:218: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:219: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:267: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:268: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:269: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:270: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:274: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:275: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:276: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:277: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:281: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:282: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:283: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:284: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:290: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:292: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_top.v:294: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+Loading db file '/eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db'
+1
+dc_shell> elaborate $design -lib work
+Loading db file '/eda/synopsys/syn/V-2023.12/libraries/syn/gtech.db'
+Loading db file '/eda/synopsys/syn/V-2023.12/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_max_lth'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 164 in file
+	'/eda/synopsys/final_project/rtl/i2c_master_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           166            |    auto/user     |
+===============================================
+
+Statistics for case statements in always block at line 179 in file
+	'/eda/synopsys/final_project/rtl/i2c_master_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           194            |    auto/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 160 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    wb_ack_o_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 164 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    wb_dat_o_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 179 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       ctr_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       txr_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      prer_reg       | Flip-flop |  16   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 203 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cr_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 264 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       al_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      rxack_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       tip_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    irq_flag_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 288 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    wb_inta_o_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (i2c_master_top)
+Elaborated 1 design.
+Current design is now 'i2c_master_top'.
+Information: Building the design 'i2c_master_byte_ctrl'. (HDL-193)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v:233: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block at line 204 in file
+	'/eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           233            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine i2c_master_byte_ctrl line 176 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       sr_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_byte_ctrl line 187 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      dcnt_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_byte_ctrl line 204 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_byte_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    core_txd_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     cmd_ack_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     c_state_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      shift_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     ack_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    core_cmd_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       ld_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (i2c_master_byte_ctrl)
+Information: Building the design 'i2c_master_bit_ctrl'. (HDL-193)
+Warning:  /eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v:408: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block at line 386 in file
+	'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           408            |    user/user     |
+|           412            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 195 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    dscl_oen_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 200 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   slave_wait_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 210 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     clk_en_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|       cnt_reg       | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 237 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      cSDA_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      cSCL_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 256 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   filter_cnt_reg    | Flip-flop |  14   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 263 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      fSCL_reg       | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+|      fSDA_reg       | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 282 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sSCL_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|      dSCL_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|      sSDA_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|      dSDA_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 312 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  sta_condition_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  sto_condition_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 331 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      busy_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 342 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cmd_stop_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 350 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       al_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 360 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      dout_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 386 in file
+		'/eda/synopsys/final_project/rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     sda_chk_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     sda_oen_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     scl_oen_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     cmd_ack_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     c_state_reg     | Flip-flop |  18   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (i2c_master_bit_ctrl)
+1
+dc_shell> current_design 
+Current design is 'i2c_master_top'.
+{i2c_master_top}
+dc_shell> 
+dc_shell> check_design -summary
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12
+Date:        Wed May 15 20:02:36 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      5
+    Unconnected ports (LINT-28)                                     2
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1
+dc_shell> source /eda/synopsys/final_project/syn/cons/cons.tcl
+Loading db file '/eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_min_nt.db'
+Warning: Creating virtual clock named 'V_Clk' with no sources. (UID-348)
+1
+dc_shell> link
+
+  Linking design 'i2c_master_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3 designs)               /eda/synopsys/final_project/syn/i2c_master_top.db, etc
+  saed90nm_max_lth (library)  /eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db
+
+1
+dc_shell> set_fix_multiple_port_nets -all
+1
+dc_shell> compile -map_effort medium
+CPU Load: 7%, Ram Free: 5 GB, Swap Free: 13 GB, Work Disk Free: 32 GB, Tmp Disk Free: 32 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | V-2023.12-DWBB_202312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 604                                    |
+| Number of User Hierarchies                              | 2                                      |
+| Sequential Cell Count                                   | 154                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 6                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 2                                      |
+| Number of Dont Touch Cells                              | 184                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all                                   |
+====================================================================================================
+
+Information: There are 8 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'i2c_master_bit_ctrl'
+Information: The register 'c_state_reg[17]' is a constant and will be removed. (OPT-1206)
+  Processing 'i2c_master_byte_ctrl'
+Information: Changed minimum wire load model for 'DW01_dec_width3_DW01_dec_0' from 'ForQA' to 'ForQA'. (OPT-171)
+  Processing 'i2c_master_top'
+
+  Updating timing information
+Information: Changed minimum wire load model for 'i2c_master_bit_ctrl' from '8000' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_byte_ctrl' from 'ForQA' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'i2c_master_bit_ctrl_DW01_dec_0_DW01_dec_1'
+Information: Changed minimum wire load model for 'i2c_master_bit_ctrl_DW01_dec_0_DW01_dec_1' from '8000' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+  Processing 'i2c_master_bit_ctrl_DW01_dec_1_DW01_dec_2'
+Information: Changed minimum wire load model for 'i2c_master_bit_ctrl_DW01_dec_1_DW01_dec_2' from '8000' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03   10152.3      0.00       0.0       0.0                          
+    0:00:03   10152.3      0.00       0.0       0.0                          
+    0:00:03   10152.3      0.00       0.0       0.0                          
+    0:00:04   10152.3      0.00       0.0       0.0                          
+    0:00:04   10152.3      0.00       0.0       0.0                          
+    0:00:04    8872.2      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8863.9      0.00       0.0       0.0                          
+    0:00:04    8675.9      0.00       0.0       0.0                          
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04    8675.9      0.00       0.0       0.0                          
+    0:00:04    8675.9      0.00       0.0       0.0                          
+    0:00:04    8614.2      0.00       0.0       0.0                          
+    0:00:04    8592.1      0.00       0.0       0.0                          
+    0:00:04    8581.0      0.00       0.0       0.0                          
+    0:00:04    8575.5      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+    0:00:04    8564.4      0.00       0.0       0.0                          
+Loading db file '/eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_min_nt.db'
+Loading db file '/eda/synopsys/project/standardCell/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+CPU Load: 9%, Ram Free: 5 GB, Swap Free: 13 GB, Work Disk Free: 32 GB, Tmp Disk Free: 32 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+dc_shell> 
+dc_shell> report_area > /eda/synopsys/final_project/syn/report/synth_area.rpt
+dc_shell> report_cell > /eda/synopsys/final_project/syn/report/synth_cells.rpt
+dc_shell> report_qor  > /eda/synopsys/final_project/syn/report/synth_qor.rpt
+dc_shell> report_resources > /eda/synopsys/final_project/syn/report/synth_resour ces.rpt
+dc_shell> report_timing -max_paths 10 > /eda/synopsys/final_project/syn/report/s ynth_timing.rpt 
+dc_shell>  
+dc_shell> write_sdc /eda/synopsys/final_project/syn/output/${design}.sdc 
+1
+dc_shell> 
+dc_shell> define_name_rules  no_case -case_insensitive
+1
+dc_shell> change_names -rule no_case -hierarchy
+1
+dc_shell> change_names -rule verilog -hierarchy
+1
+dc_shell> set verilogout_no_tri  true
+true
+dc_shell> set verilogout_equation  false
+false
+dc_shell> 
+dc_shell> write -hierarchy -format verilog -output /eda/synopsys/final_project/s yn/output/${design}.v 
+Writing verilog file '/eda/synopsys/final_project/syn/output/i2c_master_top.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+dc_shell> write -f ddc -hierarchy -output /eda/synopsys/final_project/syn/output /${design}.ddc   
+Writing ddc file '/eda/synopsys/final_project/syn/output/i2c_master_top.ddc'.
+1
+dc_shell> 
+dc_shell> exit
+
+Memory usage for this session 150 Mbytes.
+Memory usage for this session including child processes 150 Mbytes.
+CPU usage for this session 9 seconds ( 0.00 hours ).
+Elapsed time for this session 110 seconds ( 0.03 hours ).
+
+Thank you...

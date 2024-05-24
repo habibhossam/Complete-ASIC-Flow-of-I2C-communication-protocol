@@ -1,0 +1,50 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : i2c_master_top
+Version: V-2023.12
+Date   : Fri May 17 15:34:58 2024
+****************************************
+
+
+  Startpoint: wb_rst_i (input port clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cnt_reg_5_
+               (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: INPUTS
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.08       0.08
+  input external delay                                    2.00       2.08 r
+  wb_rst_i (in)                                           0.10       2.18 r
+  HFSINV_1728_1/ZN (INVX0)                                0.13       2.31 f
+  byte_controller/bit_controller/U50/QN (NAND4X0)         0.16       2.47 r
+  byte_controller/bit_controller/U52/QN (NOR2X0)          0.18       2.66 f
+  byte_controller/bit_controller/U30/QN (NOR2X0)          0.14       2.79 r
+  byte_controller/bit_controller/U29/Q (AO222X1)          0.14       2.93 r
+  byte_controller/bit_controller/U_PTECO_HOLD_BUF9/Z (NBUFFX32)
+                                                          0.11 H     3.04 r
+  byte_controller/bit_controller/cnt_reg_5_/D (DFFARX2)
+                                                          0.00 +     3.04 r
+  data arrival time                                                  3.04
+
+  clock wb_clk_i (rise edge)                              5.00       5.00
+  clock network delay (propagated)                        0.26       5.26
+  clock reconvergence pessimism                           0.00       5.26
+  clock uncertainty                                      -0.30       4.96
+  byte_controller/bit_controller/cnt_reg_5_/CLK (DFFARX2)            4.96 r
+  library setup time                                     -0.05       4.91
+  data required time                                                 4.91
+  ------------------------------------------------------------------------------
+  data required time                                                 4.91
+  data arrival time                                                 -3.04
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        1.87
+
+
+1
